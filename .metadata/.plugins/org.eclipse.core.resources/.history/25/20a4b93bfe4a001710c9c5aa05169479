@@ -249,13 +249,13 @@ void Task6_task(os_task_param_t task_init_data)
 		iCounter++;
 		OSA_TimeDelay(20);
 
-		//Resets iCounter
-		if(iCounter > 1000)
-			iCounter = 0;
 		iState = 1;
 		break;
 	}
     
+    
+    
+
 #ifdef PEX_USE_RTOS   
   }
 #endif    
