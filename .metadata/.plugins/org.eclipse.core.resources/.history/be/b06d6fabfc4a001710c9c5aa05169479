@@ -1,0 +1,310 @@
+/* ###################################################################
+**     Filename    : os_tasks.c
+**     Project     : LabLED
+**     Processor   : MKL25Z128VLK4
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2017-06-06, 16:42, # CodeGen: 27
+**     Abstract    :
+**         This is user's event module.
+**         Put your event handler code here.
+**     Settings    :
+**     Contents    :
+**         Task5_task - void Task5_task(os_task_param_t task_init_data);
+**         Task4_task - void Task4_task(os_task_param_t task_init_data);
+**         Task3_task - void Task3_task(os_task_param_t task_init_data);
+**         Task2_task - void Task2_task(os_task_param_t task_init_data);
+**         Task1_task - void Task1_task(os_task_param_t task_init_data);
+**
+** ###################################################################*/
+/*!
+** @file os_tasks.c
+** @version 01.00
+** @brief
+**         This is user's event module.
+**         Put your event handler code here.
+*/         
+/*!
+**  @addtogroup os_tasks_module os_tasks module documentation
+**  @{
+*/         
+/* MODULE os_tasks */
+
+#include "Cpu.h"
+#include "Events.h"
+#include "os_tasks.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif 
+
+
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+/*
+** ===================================================================
+**     Event       :  Task5_task (module os_tasks)
+**
+**     Component   :  Task5 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task5_task(os_task_param_t task_init_data)
+{
+  /* Write your local variable definition here */
+  
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+    /* Write your code here ... */
+    
+    
+    OSA_TimeDelay(10);                 /* Example code (for task release) */
+   
+    
+    
+    
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task4_task (module os_tasks)
+**
+**     Component   :  Task4 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task4_task(os_task_param_t task_init_data)
+{
+  /* Write your local variable definition here */
+  
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+    /* Write your code here ... */
+    
+    
+    OSA_TimeDelay(10);                 /* Example code (for task release) */
+   
+    
+    
+    
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task3_task (module os_tasks)
+**
+**     Component   :  Task3 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task3_task(os_task_param_t task_init_data)
+{
+  /* Write your local variable definition here */
+  
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+    /* Write your code here ... */
+    
+    
+    OSA_TimeDelay(10);                 /* Example code (for task release) */
+   
+    
+    
+    
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task2_task (module os_tasks)
+**
+**     Component   :  Task2 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task2_task(os_task_param_t task_init_data)
+{
+  /* Write your local variable definition here */
+  
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+    /* Write your code here ... */
+    
+    
+    OSA_TimeDelay(10);                 /* Example code (for task release) */
+   
+    
+    
+    
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task1_task (module os_tasks)
+**
+**     Component   :  Task1 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task1_task(os_task_param_t task_init_data)
+{
+  /* Write your local variable definition here */
+  
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+    /* Write your code here ... */
+    
+    
+    OSA_TimeDelay(10);                 /* Example code (for task release) */
+   
+    
+    
+    
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task6_task (module os_tasks)
+**
+**     Component   :  TaskMaster [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task6_task(os_task_param_t task_init_data)
+{
+  int iCounter = 0;					  //Counter to coordinate semaphores
+  int iState = 0;
+  
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+    /* This task coordinates all the other tasks
+     * T1: 20ms
+     * T2: 40ms
+     * T3: 100ms
+     * T4: 500ms
+     * T5: 1000ms
+     * We can divide the time on 20ms parts, therefore
+     */
+    
+	switch(iState) {
+	case 0:
+		//Initial state
+		iState = 1;
+		break;
+
+	case 1:
+		//Handles T1
+		if((iCounter*20)%20 == 0)
+			OSA_SemaPost(sem[TASK1]);
+
+		//Handles T2
+		if((iCounter*20)%40 == 0)
+			OSA_SemaPost(sem[TASK2]);
+
+		//Handles T3
+		if((iCounter*20)%100 == 0)
+			OSA_SemaPost(sem[TASK3]);
+
+		//Handles T4
+		if((iCounter*20)%500 == 0)
+			OSA_SemaPost(sem[TASK4]);
+
+		//Handles T5
+		if((iCounter*20)%1000 == 0)
+			OSA_SemaPost(sem[TASK5]);
+
+		iCounter++;
+		OSA_TimeDelay(20);
+
+		iState = 1;
+		break;
+	}
+    
+    
+    
+
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/* END os_tasks */
+
+#ifdef __cplusplus
+}  /* extern "C" */
+#endif 
+
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/

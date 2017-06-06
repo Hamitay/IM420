@@ -1,0 +1,80 @@
+/* ******************************************************************/
+/* File name:        serial_hal.h                                    	*/
+/* File description: Header file containing the function/methods    */
+/*                   prototypes of serial.c                         */
+/* Author name:      Gustavo e Lucas                                */
+/* Creation date:    12april2017                                    */
+/* Revision date:    25mai2017                                    */
+/* ******************************************************************/
+
+#ifndef SOURCES_SERIAL_SERIAL_HAL_H_
+#define SOURCES_SERIAL_SERIAL_HAL_H_
+
+
+#include "KL25Z/es670_peripheral_board.h"
+#include "fsl_device_registers.h"
+#include "Util/debugUart.h"
+#include "fsl_debug_console.h"
+#include "Protocol/cmdmachine_hal.h"
+
+
+/* ******************************************************** */
+/* Method name:        serial_insereBuffer             		*/
+/* Method description: inserts a Character on the buffer	*/
+/* Input params:       char cChar = char to be inserted		*/
+/* Output params:      n/a                          		*/
+/* ******************************************************** */
+void serial_insereBuffer(char cChar);
+
+/* ******************************************************** */
+/* Method name:        serial_retiraBuffer             		*/
+/* Method description: removes a Character from the buffer	*/
+/* Input params:       n/a                          		*/
+/* Output params:      char cChar = char that was removed	*/
+/* ******************************************************** */
+char serial_retiraBuffer(void);
+
+/* ******************************************************** */
+/* Method name:        setConfig                    		*/
+/* Method description: Initialize the serial communication	*/
+/* Input params:       n/a                          		*/
+/* Output params:      n/a                          		*/
+/* ******************************************************** */
+void serial_setConfig(void);
+
+/* **************************************************************************/
+/* Method name:        sendBuffer                    						*/
+/* Method description: sends a String to the UART serial communication port */
+/* Input params:       cBuffer = String to be sent							*/
+/*					   iSize   = Size of the String							*/
+/* Output params:      n/a                          						*/
+/* **************************************************************************/
+void serial_sendBuffer(char cBuffer[], int iSize);
+
+/* ******************************************************** 	*/
+/* Method name:        receiveBuffer                    		*/
+/* Method description: reads a String from the UART serial    	*/
+/*  communication port until the CR/LF on the end				*/
+/* Input params:       cBuffer = String to be write				*/
+/* Output params:      iSize = Size of the String         		*/
+/* ******************************************************** 	*/
+int serial_receiveBuffer(char *cBuffer);
+
+/* *************************************************************/
+/* Method name:        serial_sendNumber              		   */
+/* Method description: Write number with one decimal digit     */
+/* Input params:       float fNmbr = Number to be printed      */
+/* Output params:      n/a                          		   */
+/* *************************************************************/
+void serial_sendNumber(float fNmbr);
+
+/* **********************************************************************/
+/* Method name:        serial_interpretCmd            		   			*/
+/* Method description: Reads from the buffer and interprets the Command */
+/* Output params:      n/a                          		   			*/
+/* Output params:      n/a                          		   			*/
+/* **********************************************************************/
+void serial_interpretCmd();
+
+
+#endif
