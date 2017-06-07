@@ -41,7 +41,36 @@ extern "C" {
 /* UART0 interrupt handler */
 void UART0_IRQHandler(void)
 {
+	//TO DO:
+	//BETTER UNDERSTAND THIS SERIAL INTERRUPT
 
+	//Prints sheel prompt (SCHED_IM420)
+	char[] prompt = "SCHED_IM420:";
+
+	//Waits for an char to be put on the stream
+
+	//getthechar
+	char cInput;
+
+	switch(cInput) {
+		case p:				//Pause all the tasks and the scheduler
+			//How to pause all tasks? Can this be easily done with another semaphore?
+			//Search for vTaskSuspendAll();
+			break;
+		case s:				//Show RTOS state
+			//Search for all the tasks handlers, maybe a method will give me this
+			//With the handlers I can get all the tasks info
+			//Print header
+			//Print all the tasks info
+			break;
+		case r:				//Resumes the scheduler
+			//Check if the scheduler is paused
+			//If not output to user that the scheduler is already on, keep going
+			//If it is indeed paused, unpause (how?), the proceeds give feedback to user
+			//Search for xTaskResumeAll();
+			//Remember to now switch context on this part of the code
+			break;
+	}
 }
 /* END Events */
 

@@ -64,7 +64,6 @@ void Task5_task(os_task_param_t task_init_data)
   while (1) {
 #endif
     OSA_SemaWait(sem[TASK5], OSA_WAIT_FOREVER);
-
 #ifdef PEX_USE_RTOS   
   }
 #endif    
@@ -216,7 +215,6 @@ void Task6_task(os_task_param_t task_init_data)
      * T3: 100ms
      * T4: 500ms
      * T5: 1000ms
-     * We can divide the time on 20ms parts, therefore
      */
     
 	switch(iState) {
@@ -224,29 +222,24 @@ void Task6_task(os_task_param_t task_init_data)
 		//Initial state
 		iState = 1;
 		break;
-
 	case 1:
 		//Handles T1
 		if((iCounter*20)%20 == 0)
 			OSA_SemaPost(sem[TASK1]);
-
 		//Handles T2
 		if((iCounter*20)%40 == 0)
 			OSA_SemaPost(sem[TASK2]);
-
 		//Handles T3
 		if((iCounter*20)%100 == 0)
 			OSA_SemaPost(sem[TASK3]);
-
 		//Handles T4
 		if((iCounter*20)%500 == 0)
-			OSA_SemaPost(sem[TASK4]);
-
+			OSA_SemaPost(sem[TASK4])
 		//Handles T5
 		if((iCounter*20)%1000 == 0)
 			OSA_SemaPost(sem[TASK5]);
-
 		iCounter++;
+		//Delays 20ms
 		OSA_TimeDelay(20);
 
 		//Resets iCounter
