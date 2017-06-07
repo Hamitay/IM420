@@ -56,7 +56,10 @@
 #define configGENERATE_STATIC_SOURCES            1 /* 1: it will create 'static' sources to be used without Processor Expert; 0: Processor Expert code generated */
 #define configPEX_KINETIS_SDK                    1 /* 1: project is a Kinetis SDK Processor Expert project; 0: No Kinetis Processor Expert project */
 
-#define configGENERATE_RUN_TIME_STATS            0 /* 1: generate runtime statistics; 0: no runtime statistics */
+#define configGENERATE_RUN_TIME_STATS            1 /* 1: generate runtime statistics; 0: no runtime statistics */
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() ( ulHighFrequencyTimerTicks = 0UL )
+#define portGET_RUN_TIME_COUNTER_VALUE()	ulHighFrequencyTimerTicks
+
 
 #define configUSE_PREEMPTION                     1 /* 1: pre-emptive mode; 0: cooperative mode */
 #define configUSE_IDLE_HOOK                      0 /* 1: use Idle hook; 0: no Idle hook */
@@ -120,7 +123,7 @@
 #define INCLUDE_xQueueGetMutexHolder             1
 #define INCLUDE_xTaskGetCurrentTaskHandle        1
 #define INCLUDE_xTaskGetIdleTaskHandle           0
-#define INCLUDE_eTaskGetState                    0
+#define INCLUDE_eTaskGetState                    1
 #define INCLUDE_pcTaskGetTaskName                0
 #define INCLUDE_xEventGroupSetBitFromISR         1
 #define INCLUDE_xTimerPendFunctionCall           1

@@ -55,12 +55,23 @@ void pitTimer1_IRQHandler(void)
 
   case 'p':
 	  debug_printf("Pausing tasks...\n\r");
+	  vTaskSuspendAll();
 	  break;
   case 's':
 	  debug_printf("Task status:\n\r");
+	  //Suspends the tasks
+	  vTaskSuspendAll();
+	  //Get tasks state
+	  int iNumberOfTasks = uxTaskGetNumberOfTasks();
+	  TaskStats_t stats[iNumberOfTasks];
+	  uxTaskGetSystemState(stats,iNumberOfTasks,NULL);
+	  //Now prints all the stats
+	  debug_printf("Sucess!");
+	  xTaskResumeAll();
 	  break;
   case'r':
 	  debug_printf("Resuming tasks...\n\r");
+	  xTaskResumeAll();
 	  break;
   default:
 	  debug_printf("ERROR: Unknown command \n\r");

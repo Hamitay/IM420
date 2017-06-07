@@ -1,11 +1,52 @@
-16:00:58 **** Incremental Build of configuration Debug for project LabLED ****
+18:21:22 **** Incremental Build of configuration Debug for project LabLED ****
 make all 
-'Invoking: Cross ARM GNU Print Size'
-arm-none-eabi-size --format=berkeley "LabLED.elf"
-   text	   data	    bss	    dec	    hex	filename
-  28988	    128	   3184	  32300	   7e2c	LabLED.elf
-'Finished building: LabLED.siz'
+'Building file: ../Static_Code/System/PE_low_level_init.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Static_Code/System/PE_low_level_init.d" -MT"Static_Code/System/PE_low_level_init.o" -c -o "Static_Code/System/PE_low_level_init.o" "../Static_Code/System/PE_low_level_init.c"
+'Finished building: ../Static_Code/System/PE_low_level_init.c'
 ' '
+'Building file: ../Sources/customComponents/led_hal.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Sources/customComponents/led_hal.d" -MT"Sources/customComponents/led_hal.o" -c -o "Sources/customComponents/led_hal.o" "../Sources/customComponents/led_hal.c"
+'Finished building: ../Sources/customComponents/led_hal.c'
+' '
+'Building file: ../Sources/Events.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+../Sources/Events.c: In function 'pitTimer1_IRQHandler':
+../Sources/Events.c:66:4: error: unknown type name 'TaskStats_t'
+    TaskStats_t stats[iNumberOfTasks];
+    ^
+../Sources/Events.c:67:4: warning: passing argument 1 of 'uxTaskGetSystemState' from incompatible pointer type [enabled by default]
+    uxTaskGetSystemState(stats,iNumberOfTasks,NULL);
+    ^
+In file included from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include/FreeRTOS.h:113:0,
+                 from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc/fsl_os_abstraction_free_rtos.h:78,
+                 from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc/fsl_os_abstraction.h:80,
+                 from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/Cpu.h:74,
+                 from ../Sources/Events.c:30:
+C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include/task.h:1258:13: note: expected 'struct TaskStatus_t * const' but argument is of type 'int *'
+ UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime );
+             ^
+../Sources/Events.c:72:3: error: switch jumps into scope of identifier with variably modified type
+   case'r':
+   ^
+../Sources/Events.c:54:3: note: switch starts here
+   switch(cInput) {
+   ^
+../Sources/Events.c:66:16: note: 'stats' declared here
+    TaskStats_t stats[iNumberOfTasks];
+                ^
+../Sources/Events.c:76:3: error: switch jumps into scope of identifier with variably modified type
+   default:
+   ^
+../Sources/Events.c:54:3: note: switch starts here
+   switch(cInput) {
+   ^
+../Sources/Events.c:66:16: note: 'stats' declared here
+    TaskStats_t stats[iNumberOfTasks];
+                ^
+make: *** [Sources/Events.o] Error 1
 
-16:00:59 Build Finished (took 570ms)
+18:21:23 Build Finished (took 1s.203ms)
 
