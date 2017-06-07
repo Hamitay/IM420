@@ -40,7 +40,9 @@ Generated_Code/clockMan1.o: ../Generated_Code/clockMan1.c \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_gpio_driver.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_uart_hal.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_lpsci_hal.h \
- C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_pit_hal.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_pit_driver.h
 
 ../Generated_Code/clockMan1.h:
 
@@ -129,3 +131,7 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_ua
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_lpsci_hal.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h:
+
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_pit_hal.h:
+
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_pit_driver.h:

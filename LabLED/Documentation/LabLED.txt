@@ -249,6 +249,26 @@ Module "DbgCs1"    (component fsl_debug_console)
    - DbgCs1_debug_scanf -Reads formatted data from the standard input stream.
    - DbgCs1_debug_getchar -Reads a character from standard input.
 
+Module "pitTimer1" (component fsl_pit)
+   - pitTimer1_PIT_DRV_Init -Initializes the PIT module.
+   - pitTimer1_PIT_DRV_Deinit -Disables the PIT module and gate control.
+   - pitTimer1_PIT_DRV_InitChannel -Initializes the PIT channel.
+   - pitTimer1_PIT_DRV_StartTimer -Starts the timer counting.
+   - pitTimer1_PIT_DRV_StopTimer -Stops the timer counting.
+   - pitTimer1_PIT_DRV_SetTimerPeriodByUs -Sets the timer period in microseconds.
+   - pitTimer1_PIT_DRV_GetTimerPeriodByUs -Gets the timer period in microseconds for one single channel.
+   - pitTimer1_PIT_DRV_ReadTimerUs -Reads the current timer value in microseconds.
+   - pitTimer1_PIT_DRV_SetTimerPeriodByCount -Sets the timer period in units of count.
+   - pitTimer1_PIT_DRV_GetTimerPeriodByCount -Returns the current timer period in units of count.
+   - pitTimer1_PIT_DRV_ReadTimerCount -Reads the current timer counting value.
+   - pitTimer1_PIT_DRV_SetLifetimeTimerPeriodByUs -Sets the lifetime timer period.
+   - pitTimer1_PIT_DRV_ReadLifetimeTimerUs -Reads the current lifetime value in microseconds.
+   - pitTimer1_PIT_DRV_InitUs -Initializes two PIT channels to serve as a microseconds unit.
+   - pitTimer1_PIT_DRV_GetUs -Gets an absolute time stamp.
+   - pitTimer1_PIT_DRV_DelayUs -Delays the specific microseconds.
+   - pitTimer1_PIT_DRV_ClearIntFlag -Clears the timer interrupt flag.
+   - pitTimer1_PIT_DRV_IsIntPending -Reads the current timer timeout flag.
+
 Module "Cpu"       (component MKL25Z128LK4_4SDK)
    - Cpu_SystemInit -This method configures the oscillator (PLL) that is part of the microcontroller device. SystemInit is 
                 called from startup_device file.

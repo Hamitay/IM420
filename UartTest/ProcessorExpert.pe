@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PEproject>
+  <Header>
+    <Name>UartTest</Name>
+    <SavedBy>aluno</SavedBy>
+    <ModificationStamp>1</ModificationStamp>
+    <Date>2017-06-07</Date>
+    <IDE>Eclipse IDE</IDE>
+    <PEversion>1.12.2.RT7_b1550-0615</PEversion>
+  </Header>
+  <Options>
+    <ProjectMainModule>main</ProjectMainModule>
+    <EventsDirectory>Sources</EventsDirectory>
+    <GeneratedCodeDirectory>Generated_Code</GeneratedCodeDirectory>
+    <DocumentationDir>Documentation</DocumentationDir>
+    <CompiledFilesSubDir />
+    <ProjectSettingsDirectory>Project_Settings</ProjectSettingsDirectory>
+    <StaticCodeDirectory>Static_Code</StaticCodeDirectory>
+    <TemporaryDir />
+    <OverwriteEvents>3</OverwriteEvents>
+    <MainModuleUpdate>3</MainModuleUpdate>
+    <EventModulesUpdate>3</EventModulesUpdate>
+    <UpdateUserModuleIncludes>true</UpdateUserModuleIncludes>
+    <GenerateISRs>false</GenerateISRs>
+    <DeleteUnusedEvents>true</DeleteUnusedEvents>
+    <OverwriteBeanDrv>0</OverwriteBeanDrv>
+    <ReviewCodeGenChanges>false</ReviewCodeGenChanges>
+    <ReviewCommentChanges>false</ReviewCommentChanges>
+    <UseExistingModules>true</UseExistingModules>
+    <RenamePeripheries>false</RenamePeripheries>
+    <Autodependency>true</Autodependency>
+    <ProjectCompNumb>1</ProjectCompNumb>
+    <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
+    <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
+    <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
+    <UserInterface>CLASSIC</UserInterface>
+    <GenerateCodeBeforeBuild>true</GenerateCodeBeforeBuild>
+    <SaveProjectBeforeGeneration>true</SaveProjectBeforeGeneration>
+    <GenerateCodeGenLog>false</GenerateCodeGenLog>
+    <DontWriteGeneratedModules lines_count="0" />
+    <ProjectStaticFilesGenerationMode>STANDALONE</ProjectStaticFilesGenerationMode>
+  </Options>
+  <ComponentInitializationSequence>
+    <EmptySection_DummyValue />
+  </ComponentInitializationSequence>
+</PEproject>
+

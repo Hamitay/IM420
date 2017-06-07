@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-06, 17:41, # CodeGen: 32
+**     Date/Time   : 2017-06-07, 14:56, # CodeGen: 37
 **     Abstract    :
 **
 **     Settings    :
@@ -1108,11 +1108,11 @@ void deinit_swd_pins(uint32_t instance)
 *END**************************************************************************/
 void init_uart0_pins(uint32_t instance)
 {
-  /* Affects PORTE_PCR21 register */
-  PORT_HAL_SetMuxMode(PORTE,21UL,kPortMuxAlt4);
+  /* Affects PORTA_PCR1 register */
+  PORT_HAL_SetMuxMode(PORTA,1UL,kPortMuxAlt2);
   SIM_HAL_SetLpsciRxSrcMode(SIM,UART0_IDX,kSimLpsciRxsrcPin);
-  /* Affects PORTE_PCR20 register */
-  PORT_HAL_SetMuxMode(PORTE,20UL,kPortMuxAlt4);
+  /* Affects PORTA_PCR2 register */
+  PORT_HAL_SetMuxMode(PORTA,2UL,kPortMuxAlt2);
 }
 /*FUNCTION**********************************************************************
 *
@@ -1122,8 +1122,8 @@ void init_uart0_pins(uint32_t instance)
 *END**************************************************************************/
 void deinit_uart0_pins(uint32_t instance)
 {
-  PORT_HAL_SetMuxMode(PORTE,21UL,kPortPinDisabled);
-  PORT_HAL_SetMuxMode(PORTE,20UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTA,1UL,kPortPinDisabled);
+  PORT_HAL_SetMuxMode(PORTA,2UL,kPortPinDisabled);
 }
 
 

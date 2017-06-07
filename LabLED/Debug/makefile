@@ -22,11 +22,13 @@ RM := rm -rf
 -include SDK/platform/hal/src/sim/MKL25Z4/subdir.mk
 -include SDK/platform/hal/src/rtc/subdir.mk
 -include SDK/platform/hal/src/port/subdir.mk
+-include SDK/platform/hal/src/pit/subdir.mk
 -include SDK/platform/hal/src/osc/subdir.mk
 -include SDK/platform/hal/src/mcg/subdir.mk
 -include SDK/platform/hal/src/lpsci/subdir.mk
 -include SDK/platform/hal/src/gpio/subdir.mk
 -include SDK/platform/drivers/src/rtc/subdir.mk
+-include SDK/platform/drivers/src/pit/subdir.mk
 -include SDK/platform/drivers/src/gpio/subdir.mk
 -include SDK/platform/devices/MKL25Z4/startup/gcc/subdir.mk
 -include SDK/platform/devices/MKL25Z4/startup/subdir.mk

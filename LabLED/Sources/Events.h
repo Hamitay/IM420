@@ -43,11 +43,14 @@
 #include "Task5.h"
 #include "TaskMaster.h"
 #include "DbgCs1.h"
+#include "pitTimer1.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif 
 
+
+void pitTimer1_IRQHandler(void);
 
 /* END Events */
 

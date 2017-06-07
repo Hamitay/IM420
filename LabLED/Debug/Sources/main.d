@@ -43,6 +43,8 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_uart_hal.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_lpsci_hal.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_pit_hal.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_pit_driver.h \
  ../Sources/Events.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/clockMan1.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pin_init.h \
@@ -57,6 +59,7 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h \
  ../Sources/os_tasks.h ../Sources/customComponents/led_hal.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/devices/MKL25Z4/include/MKL25Z4.h
 
@@ -148,6 +151,10 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_lp
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h:
 
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_pit_hal.h:
+
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_pit_driver.h:
+
 ../Sources/Events.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/clockMan1.h:
@@ -175,6 +182,8 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h:
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h:
+
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h:
 
 ../Sources/os_tasks.h:
 

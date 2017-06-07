@@ -38,40 +38,37 @@ extern "C" {
 
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
-/* UART0 interrupt handler */
-void UART0_IRQHandler(void)
+void pitTimer1_IRQHandler(void)
 {
-	//TO DO:
-	//BETTER UNDERSTAND THIS SERIAL INTERRUPT
+  /* Clear interrupt flag.*/
+  PIT_HAL_ClearIntFlag(g_pitBase[FSL_PITTIMER1], FSL_PITTIMER1_CHANNEL);
+  /* Write your code here ... */
+  //char cInput = debug_getchar();
 
-	//Prints sheel prompt (SCHED_IM420)
-	char[] prompt = "SCHED_IM420:";
 
-	//Waits for an char to be put on the stream
+  debug_printf("SCHE_IM420:");
 
-	//getthechar
-	char cInput;
+  //Get command
+  char cInput = debug_getchar();
 
-	switch(cInput) {
-		case p:				//Pause all the tasks and the scheduler
-			//How to pause all tasks? Can this be easily done with another semaphore?
-			//Search for vTaskSuspendAll();
-			break;
-		case s:				//Show RTOS state
-			//Search for all the tasks handlers, maybe a method will give me this
-			//With the handlers I can get all the tasks info
-			//Print header
-			//Print all the tasks info
-			break;
-		case r:				//Resumes the scheduler
-			//Check if the scheduler is paused
-			//If not output to user that the scheduler is already on, keep going
-			//If it is indeed paused, unpause (how?), the proceeds give feedback to user
-			//Search for xTaskResumeAll();
-			//Remember to now switch context on this part of the code
-			break;
-	}
+  switch(cInput) {
+
+  case 'p':
+	  debug_printf("Pausing tasks...\n\r");
+	  break;
+  case 's':
+	  debug_printf("Task status:\n\r");
+	  break;
+  case'r':
+	  debug_printf("Resuming tasks...\n\r");
+	  break;
+  default:
+	  debug_printf("ERROR: Unknown command \n\r");
+	  break;
+  }
+
 }
+
 /* END Events */
 
 #ifdef __cplusplus

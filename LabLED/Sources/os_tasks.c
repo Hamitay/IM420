@@ -63,7 +63,7 @@ void Task5_task(os_task_param_t task_init_data)
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
-    OSA_SemaWait(sem[TASK5], OSA_WAIT_FOREVER);
+    while(OSA_SemaWait(&sem5, OSA_WAIT_FOREVER));
 #ifdef PEX_USE_RTOS   
   }
 #endif    
@@ -91,7 +91,7 @@ void Task4_task(os_task_param_t task_init_data)
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
-	OSA_SemaWait(sem[TASK4], OSA_WAIT_FOREVER);
+	while(OSA_SemaWait(&sem4, OSA_WAIT_FOREVER));
     
 #ifdef PEX_USE_RTOS   
   }
@@ -120,7 +120,7 @@ void Task3_task(os_task_param_t task_init_data)
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
-	OSA_SemaWait(sem[TASK3], OSA_WAIT_FOREVER);
+	while(OSA_SemaWait(&sem3, OSA_WAIT_FOREVER));
     
 #ifdef PEX_USE_RTOS   
   }
@@ -149,7 +149,7 @@ void Task2_task(os_task_param_t task_init_data)
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
-	OSA_SemaWait(sem[TASK2], OSA_WAIT_FOREVER);
+	while(OSA_SemaWait(&sem2, OSA_WAIT_FOREVER));
 
     
 #ifdef PEX_USE_RTOS   
@@ -179,7 +179,7 @@ void Task1_task(os_task_param_t task_init_data)
 #ifdef PEX_USE_RTOS
   while (1) {
 #endif
-	  OSA_SemaWait(sem[TASK1], OSA_WAIT_FOREVER);
+	 while(OSA_SemaWait(&sem1, OSA_WAIT_FOREVER));
     
 #ifdef PEX_USE_RTOS   
   }
@@ -216,7 +216,7 @@ void Task6_task(os_task_param_t task_init_data)
      * T4: 500ms
      * T5: 1000ms
      */
-    
+  /*
 	switch(iState) {
 	case 0:
 		//Initial state
@@ -234,7 +234,7 @@ void Task6_task(os_task_param_t task_init_data)
 			OSA_SemaPost(sem[TASK3]);
 		//Handles T4
 		if((iCounter*20)%500 == 0)
-			OSA_SemaPost(sem[TASK4])
+			OSA_SemaPost(sem[TASK4]);
 		//Handles T5
 		if((iCounter*20)%1000 == 0)
 			OSA_SemaPost(sem[TASK5]);
@@ -247,7 +247,7 @@ void Task6_task(os_task_param_t task_init_data)
 			iCounter = 0;
 		iState = 1;
 		break;
-	}
+	}*/
     
 #ifdef PEX_USE_RTOS   
   }

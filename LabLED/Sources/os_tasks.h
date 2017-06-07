@@ -43,6 +43,7 @@
 #include "Task5.h"
 #include "TaskMaster.h"
 #include "DbgCs1.h"
+#include "pitTimer1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -56,7 +57,12 @@ extern "C" {
 #define TASK5 4
 
 //Semaphores
-semaphore_t sem[5];
+semaphore_t *sem1;
+semaphore_t *sem2;
+semaphore_t *sem3;
+semaphore_t *sem4;
+semaphore_t *sem5;
+
 
 /*
 ** ===================================================================

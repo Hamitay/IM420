@@ -43,6 +43,8 @@ Sources/os_tasks.o: ../Sources/os_tasks.c \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_uart_hal.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_lpsci_hal.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_pit_hal.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_pit_driver.h \
  ../Sources/Events.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/clockMan1.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pin_init.h \
@@ -57,6 +59,7 @@ Sources/os_tasks.o: ../Sources/os_tasks.c \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h \
  ../Sources/os_tasks.h
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Cpu.h:
@@ -147,6 +150,10 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_lp
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc/fsl_debug_console.h:
 
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc/fsl_pit_hal.h:
+
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc/fsl_pit_driver.h:
+
 ../Sources/Events.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/clockMan1.h:
@@ -174,5 +181,7 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h:
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h:
+
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h:
 
 ../Sources/os_tasks.h:

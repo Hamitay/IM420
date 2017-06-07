@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0
 **     Datasheet   : KL25P80M48SF0RM, Rev.3, Sep 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-06, 17:53, # CodeGen: 33
+**     Date/Time   : 2017-06-07, 15:19, # CodeGen: 41
 **     Abstract    :
 **
 **     Settings    :
@@ -136,6 +136,12 @@ void Components_Init(void)
   /* Debug console initialization */
   DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
   /*! DbgCs1 Auto initialization end */
+  /*! pitTimer1 Auto initialization start */
+  OSA_InstallIntHandler(PIT_IRQn,  pitTimer1_IRQHandler);
+  PIT_DRV_Init(FSL_PITTIMER1,true);
+  PIT_DRV_InitChannel(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL,&pitTimer1_InitConfig0);
+  PIT_DRV_StartTimer(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL);
+  /*! pitTimer1 Auto initialization end */
 }
 #endif /* CPU_COMPONENTS_INIT */
 
