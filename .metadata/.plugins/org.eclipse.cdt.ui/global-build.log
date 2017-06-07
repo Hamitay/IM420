@@ -1,49 +1,26 @@
-18:21:22 **** Incremental Build of configuration Debug for project LabLED ****
+18:40:34 **** Incremental Build of configuration Debug for project LabLED ****
 make all 
-'Building file: ../Static_Code/System/PE_low_level_init.c'
-'Invoking: Cross ARM C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Static_Code/System/PE_low_level_init.d" -MT"Static_Code/System/PE_low_level_init.o" -c -o "Static_Code/System/PE_low_level_init.o" "../Static_Code/System/PE_low_level_init.c"
-'Finished building: ../Static_Code/System/PE_low_level_init.c'
-' '
-'Building file: ../Sources/customComponents/led_hal.c'
-'Invoking: Cross ARM C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Sources/customComponents/led_hal.d" -MT"Sources/customComponents/led_hal.o" -c -o "Sources/customComponents/led_hal.o" "../Sources/customComponents/led_hal.c"
-'Finished building: ../Sources/customComponents/led_hal.c'
-' '
 'Building file: ../Sources/Events.c'
 'Invoking: Cross ARM C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
-../Sources/Events.c: In function 'pitTimer1_IRQHandler':
-../Sources/Events.c:66:4: error: unknown type name 'TaskStats_t'
-    TaskStats_t stats[iNumberOfTasks];
-    ^
-../Sources/Events.c:67:4: warning: passing argument 1 of 'uxTaskGetSystemState' from incompatible pointer type [enabled by default]
-    uxTaskGetSystemState(stats,iNumberOfTasks,NULL);
-    ^
-In file included from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include/FreeRTOS.h:113:0,
-                 from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc/fsl_os_abstraction_free_rtos.h:78,
-                 from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/platform/osa/inc/fsl_os_abstraction.h:80,
-                 from C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/Generated_Code/Cpu.h:74,
-                 from ../Sources/Events.c:30:
-C:/Users/aluno/Desktop/hamitaywkspace/IM420/LabLED/SDK/rtos/FreeRTOS/include/task.h:1258:13: note: expected 'struct TaskStatus_t * const' but argument is of type 'int *'
- UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime );
-             ^
-../Sources/Events.c:72:3: error: switch jumps into scope of identifier with variably modified type
-   case'r':
-   ^
-../Sources/Events.c:54:3: note: switch starts here
-   switch(cInput) {
-   ^
-../Sources/Events.c:66:16: note: 'stats' declared here
-    TaskStats_t stats[iNumberOfTasks];
-                ^
-../Sources/Events.c:76:3: error: switch jumps into scope of identifier with variably modified type
-   default:
-   ^
-../Sources/Events.c:54:3: note: switch starts here
-   switch(cInput) {
-   ^
-../Sources/Events.c:66:16: note: 'stats' declared here
-    TaskStats_t stats[iNumberOfTasks];
-                ^
-make: *** [Sources/Events.o] Error 1
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -D"FSL_RTOS_FREE_RTOS" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/inc" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/hal/src/sim/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/system/src/clock/MKL25Z4" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/system/inc" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/osa/inc" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/CMSIS/Include" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/devices" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/devices/MKL25Z4/include" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/SDK/platform/devices/MKL25Z4/startup" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Sources" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/rtos/FreeRTOS/include" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/rtos/FreeRTOS/port/gcc" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/SDK/rtos/FreeRTOS/config" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/drivers/inc" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/src" -I"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/SDK/platform/utilities/inc" -std=c99 -MMD -MP -MF"Sources/Events.d" -MT"Sources/Events.o" -c -o "Sources/Events.o" "../Sources/Events.c"
+'Finished building: ../Sources/Events.c'
+' '
+'Building target: LabLED.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Project_Settings/Linker_Files" -Wl,-Map,"LabLED.map" -specs=nosys.specs -specs=nano.specs -o "LabLED.elf"  ./Static_Code/System/PE_low_level_init.o  ./Sources/customComponents/led_hal.o  ./Sources/Events.o ./Sources/main.o ./Sources/os_tasks.o  ./SDK/rtos/FreeRTOS/src/croutine.o ./SDK/rtos/FreeRTOS/src/event_groups.o ./SDK/rtos/FreeRTOS/src/heap_1.o ./SDK/rtos/FreeRTOS/src/heap_2.o ./SDK/rtos/FreeRTOS/src/heap_3.o ./SDK/rtos/FreeRTOS/src/heap_4.o ./SDK/rtos/FreeRTOS/src/list.o ./SDK/rtos/FreeRTOS/src/queue.o ./SDK/rtos/FreeRTOS/src/tasks.o ./SDK/rtos/FreeRTOS/src/timers.o  ./SDK/rtos/FreeRTOS/port/gcc/port.o ./SDK/rtos/FreeRTOS/port/gcc/portasm.o  ./SDK/platform/utilities/src/fsl_debug_console.o ./SDK/platform/utilities/src/print_scan.o  ./SDK/platform/system/src/interrupt/fsl_interrupt_manager.o  ./SDK/platform/system/src/clock/MKL25Z4/fsl_clock_MKL25Z4.o  ./SDK/platform/system/src/clock/fsl_clock_manager.o ./SDK/platform/system/src/clock/fsl_clock_manager_common.o  ./SDK/platform/osa/src/fsl_os_abstraction_free_rtos.o  ./SDK/platform/hal/src/uart/fsl_uart_hal.o  ./SDK/platform/hal/src/sim/MKL25Z4/fsl_sim_hal_MKL25Z4.o  ./SDK/platform/hal/src/rtc/fsl_rtc_hal.o  ./SDK/platform/hal/src/port/fsl_port_hal.o  ./SDK/platform/hal/src/pit/fsl_pit_hal.o  ./SDK/platform/hal/src/osc/fsl_osc_hal.o  ./SDK/platform/hal/src/mcg/fsl_mcg_hal.o ./SDK/platform/hal/src/mcg/fsl_mcg_hal_modes.o  ./SDK/platform/hal/src/lpsci/fsl_lpsci_hal.o  ./SDK/platform/hal/src/gpio/fsl_gpio_hal.o  ./SDK/platform/drivers/src/rtc/fsl_rtc_common.o  ./SDK/platform/drivers/src/pit/fsl_pit_common.o ./SDK/platform/drivers/src/pit/fsl_pit_driver.o  ./SDK/platform/drivers/src/gpio/fsl_gpio_common.o ./SDK/platform/drivers/src/gpio/fsl_gpio_driver.o  ./SDK/platform/devices/MKL25Z4/startup/gcc/startup_MKL25Z4.o  ./SDK/platform/devices/MKL25Z4/startup/system_MKL25Z4.o  ./SDK/platform/devices/startup.o  ./Generated_Code/Cpu.o ./Generated_Code/DbgCs1.o ./Generated_Code/Task1.o ./Generated_Code/Task2.o ./Generated_Code/Task3.o ./Generated_Code/Task4.o ./Generated_Code/Task5.o ./Generated_Code/TaskMaster.o ./Generated_Code/clockMan1.o ./Generated_Code/free_rtos.o ./Generated_Code/gpio1.o ./Generated_Code/hardware_init.o ./Generated_Code/osa1.o ./Generated_Code/pin_init.o ./Generated_Code/pitTimer1.o   
+'Finished building target: LabLED.elf'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "LabLED.elf"
+   text	   data	    bss	    dec	    hex	filename
+  29844	    128	   3184	  33156	   8184	LabLED.elf
+'Finished building: LabLED.siz'
+' '
+18:40:39 **** Incremental Build of configuration Debug for project LabLED ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "LabLED.elf"
+   text	   data	    bss	    dec	    hex	filename
+  29844	    128	   3184	  33156	   8184	LabLED.elf
+'Finished building: LabLED.siz'
+' '

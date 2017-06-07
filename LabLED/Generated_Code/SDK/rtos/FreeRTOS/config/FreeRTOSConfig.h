@@ -6,7 +6,7 @@
 **     Version     : Component 1.0.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-06, 17:16, # CodeGen: 28
+**     Date/Time   : 2017-06-07, 18:25, # CodeGen: 45
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -56,10 +56,7 @@
 #define configGENERATE_STATIC_SOURCES            1 /* 1: it will create 'static' sources to be used without Processor Expert; 0: Processor Expert code generated */
 #define configPEX_KINETIS_SDK                    1 /* 1: project is a Kinetis SDK Processor Expert project; 0: No Kinetis Processor Expert project */
 
-#define configGENERATE_RUN_TIME_STATS            1 /* 1: generate runtime statistics; 0: no runtime statistics */
-#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() ( ulHighFrequencyTimerTicks = 0UL )
-#define portGET_RUN_TIME_COUNTER_VALUE()	ulHighFrequencyTimerTicks
-
+#define configGENERATE_RUN_TIME_STATS            0 /* 1: generate runtime statistics; 0: no runtime statistics */
 
 #define configUSE_PREEMPTION                     1 /* 1: pre-emptive mode; 0: cooperative mode */
 #define configUSE_IDLE_HOOK                      0 /* 1: use Idle hook; 0: no Idle hook */
@@ -84,7 +81,7 @@
   
 /*----------------------------------------------------------*/
 #define configMAX_TASK_NAME_LEN                  12 /* Task name length */
-#define configUSE_TRACE_FACILITY                 0
+#define configUSE_TRACE_FACILITY                 1
 #define configUSE_STATS_FORMATTING_FUNCTIONS     0
 #define configUSE_16_BIT_TICKS                   0
 #define configIDLE_SHOULD_YIELD                  1
@@ -123,7 +120,7 @@
 #define INCLUDE_xQueueGetMutexHolder             1
 #define INCLUDE_xTaskGetCurrentTaskHandle        1
 #define INCLUDE_xTaskGetIdleTaskHandle           0
-#define INCLUDE_eTaskGetState                    1
+#define INCLUDE_eTaskGetState                    0
 #define INCLUDE_pcTaskGetTaskName                0
 #define INCLUDE_xEventGroupSetBitFromISR         1
 #define INCLUDE_xTimerPendFunctionCall           1

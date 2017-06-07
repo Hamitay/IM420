@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 1.4, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-07, 18:00, # CodeGen: 44
+**     Date/Time   : 2017-06-07, 18:25, # CodeGen: 45
 **     Abstract    :
 **
 **     Settings    :
@@ -998,6 +998,7 @@ void init_gpio_pins(uint32_t instance)
     case GPIOE_IDX:                     /* GPIOE_IDX */
       /* Affects PORTE_PCR24 register */
       PORT_HAL_SetMuxMode(PORTE,24UL,kPortMuxAsGpio);
+      PORT_HAL_SetPullCmd(PORTE,24UL,true);
       break;
     default:
       break;

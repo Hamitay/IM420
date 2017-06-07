@@ -31,6 +31,7 @@
 #include "Events.h"
 #include "os_tasks.h"
 #include "customComponents/led_hal.h"
+#include "osa1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -50,6 +51,8 @@ void pitTimer1_IRQHandler(void)
 
   //Get command
   char cInput = debug_getchar();
+  int iNumberOfTasks = uxTaskGetNumberOfTasks();
+  TaskStatus_t stats[iNumberOfTasks];
 
   switch(cInput) {
 
@@ -59,17 +62,22 @@ void pitTimer1_IRQHandler(void)
 	  break;
   case 's':
 	  debug_printf("Task status:\n\r");
-	  //Suspends the tasks
-	  vTaskSuspendAll();
 	  //Get tasks state
-	  int iNumberOfTasks = uxTaskGetNumberOfTasks();
-	  TaskStats_t stats[iNumberOfTasks];
 	  uxTaskGetSystemState(stats,iNumberOfTasks,NULL);
-	  //Now prints all the stats
-	  debug_printf("Sucess!");
-	  xTaskResumeAll();
+
+	  //Prints
+	  for(int i = 0; i < iNumberOfTasks; i ++) {
+		  TaskStatus_t status = stats[i];
+		  status.xTaskNumber; //ID
+		  status.uxCurrentPriority;//Priority
+		  status.eCurrentState;//Status
+		  status.ulRunTimeCounter;//Tcomp
+		  status.//Entry Point
+		  debug_printf(status.pcTaskName);
+		  debug_printf("\n\r");
+	  }
 	  break;
-  case'r':
+  case 'r':
 	  debug_printf("Resuming tasks...\n\r");
 	  xTaskResumeAll();
 	  break;
