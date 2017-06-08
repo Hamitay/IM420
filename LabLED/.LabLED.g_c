@@ -27,7 +27,7 @@
         <Line>Documentation\doxygen\pex.css</Line>
       </GenExtraFiles>
       <GenExtraFileSrcDir9>Repositories\lib\doxygen\</GenExtraFileSrcDir9>
-      <XtraAge0>1254593314</XtraAge0>
+      <XtraAge0>1254653811</XtraAge0>
       <XtraAge1>1251178256</XtraAge1>
       <XtraAge2>1251178256</XtraAge2>
       <XtraAge3>1254526266</XtraAge3>
@@ -813,17 +813,16 @@
         <Line>os_tasks</Line>
       </GenEventModules>
       <GenMethodsInEvents lines_count="1">
-        <Line>pitTimer1_IRQHandler</Line>
+        <Line>PIT_IRQHandler</Line>
       </GenMethodsInEvents>
-      <GenMethodsInos_tasks lines_count="6">
-        <Line>Task6_task</Line>
+      <GenMethodsInos_tasks lines_count="5">
         <Line>Task5_task</Line>
         <Line>Task4_task</Line>
         <Line>Task3_task</Line>
         <Line>Task2_task</Line>
         <Line>Task1_task</Line>
       </GenMethodsInos_tasks>
-      <GenAllModules lines_count="16">
+      <GenAllModules lines_count="15">
         <Line>clockMan1</Line>
         <Line>Cpu</Line>
         <Line>DbgCs1</Line>
@@ -833,16 +832,15 @@
         <Line>os_tasks</Line>
         <Line>osa1</Line>
         <Line>pin_init</Line>
-        <Line>pitTimer1</Line>
+        <Line>Shell</Line>
         <Line>Task1</Line>
         <Line>Task2</Line>
         <Line>Task3</Line>
         <Line>Task4</Line>
         <Line>Task5</Line>
-        <Line>TaskMaster</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="13">
+      <GenBeanModules lines_count="12">
         <Line>clockMan1</Line>
         <Line>pin_init</Line>
         <Line>osa1</Line>
@@ -853,14 +851,13 @@
         <Line>Task3</Line>
         <Line>Task4</Line>
         <Line>Task5</Line>
-        <Line>TaskMaster</Line>
         <Line>DbgCs1</Line>
-        <Line>pitTimer1</Line>
+        <Line>Shell</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile />
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>24</ProjectModificationStamp>
+    <ProjectModificationStamp>31</ProjectModificationStamp>
   </Options>
   <CpuID_1>
     <Generated>true</Generated>
@@ -869,7 +866,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1254586958</HeaderAge>
-    <CodeAge>1254587001</CodeAge>
+    <CodeAge>1254653477</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>2</GenNumMethods>
     <SystemInit>true</SystemInit>
@@ -1974,7 +1971,7 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>os_tasks</GenEventModule>
-    <HeaderAge>1254524228</HeaderAge>
+    <HeaderAge>1254653477</HeaderAge>
     <CodeAge>1254524228</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
@@ -2011,7 +2008,7 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>os_tasks</GenEventModule>
-    <HeaderAge>1254524228</HeaderAge>
+    <HeaderAge>1254653477</HeaderAge>
     <CodeAge>1254524228</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
@@ -2048,7 +2045,7 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>os_tasks</GenEventModule>
-    <HeaderAge>1254524228</HeaderAge>
+    <HeaderAge>1254653477</HeaderAge>
     <CodeAge>1254524228</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
@@ -2085,7 +2082,7 @@
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>os_tasks</GenEventModule>
-    <HeaderAge>1254524228</HeaderAge>
+    <HeaderAge>1254653477</HeaderAge>
     <CodeAge>1254524228</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>3</GenNumMethods>
@@ -2153,43 +2150,6 @@
     </MethodPos>
     <GenExtraFilesCount>0</GenExtraFilesCount>
   </ComponentID_31>
-  <ComponentID_39>
-    <Generated>true</Generated>
-    <GenCompName>TaskMaster</GenCompName>
-    <GenComponentVersion>1.2.0</GenComponentVersion>
-    <GenDriverVersion>01.00</GenDriverVersion>
-    <GenEventModule>os_tasks</GenEventModule>
-    <HeaderAge>1254526659</HeaderAge>
-    <CodeAge>1254526659</CodeAge>
-    <AsemblAge>-1</AsemblAge>
-    <GenNumMethods>3</GenNumMethods>
-    <Init>true</Init>
-    <GetHandler>false</GetHandler>
-    <Deinit>false</Deinit>
-    <GenNumEvents>1</GenNumEvents>
-    <TaskCode_Selected>3</TaskCode_Selected>
-    <TaskCode_Name>Task6_task</TaskCode_Name>
-    <TaskCode_Priority>interrupts disabled</TaskCode_Priority>
-    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
-    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
-    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
-    <GenMethodPos>2</GenMethodPos>
-    <MethodPos>
-      <MethodPos0>Init</MethodPos0>
-      <MethodType>internal_method</MethodType>
-      <ModuleType>Header</ModuleType>
-      <LineBeg>73</LineBeg>
-      <LineEnd>84</LineEnd>
-    </MethodPos>
-    <MethodPos>
-      <MethodPos1>Init</MethodPos1>
-      <MethodType>internal_method</MethodType>
-      <ModuleType>Code</ModuleType>
-      <LineBeg>65</LineBeg>
-      <LineEnd>91</LineEnd>
-    </MethodPos>
-    <GenExtraFilesCount>0</GenExtraFilesCount>
-  </ComponentID_39>
   <ComponentID_36>
     <Generated>true</Generated>
     <GenCompName>DbgCs1</GenCompName>
@@ -2342,14 +2302,14 @@
       <ExtraFile1>SDK\platform\hal\src\lpsci\fsl_lpsci_hal.c</ExtraFile1>
     </InhrCompID_38>
   </ComponentID_36>
-  <ComponentID_40>
+  <ComponentID_42>
     <Generated>true</Generated>
-    <GenCompName>pitTimer1</GenCompName>
+    <GenCompName>Shell</GenCompName>
     <GenComponentVersion>1.2.0</GenComponentVersion>
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
-    <HeaderAge>1254587001</HeaderAge>
-    <CodeAge>1254586958</CodeAge>
+    <HeaderAge>1254652271</HeaderAge>
+    <CodeAge>1254652271</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>18</GenNumMethods>
     <PIT_DRV_Init>true</PIT_DRV_Init>
@@ -2371,8 +2331,8 @@
     <PIT_DRV_ClearIntFlag>true</PIT_DRV_ClearIntFlag>
     <PIT_DRV_IsIntPending>true</PIT_DRV_IsIntPending>
     <GenNumEvents>1</GenNumEvents>
-    <PITx_IRQHandler_Selected>2</PITx_IRQHandler_Selected>
-    <PITx_IRQHandler_Name>pitTimer1_IRQHandler</PITx_IRQHandler_Name>
+    <PITx_IRQHandler_Selected>3</PITx_IRQHandler_Selected>
+    <PITx_IRQHandler_Name>PIT_IRQHandler</PITx_IRQHandler_Name>
     <PITx_IRQHandler_Priority>interrupts disabled</PITx_IRQHandler_Priority>
     <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
     <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
@@ -2382,9 +2342,9 @@
     <ExtraFile0>SDK\platform\drivers\inc\fsl_pit_driver.h</ExtraFile0>
     <ExtraFile1>SDK\platform\drivers\src\pit\fsl_pit_driver.c</ExtraFile1>
     <ExtraFile2>SDK\platform\drivers\src\pit\fsl_pit_common.c</ExtraFile2>
-    <InhrCompID_41>
+    <InhrCompID_43>
       <Generated>true</Generated>
-      <GenCompName>fsl_pit_hal1</GenCompName>
+      <GenCompName>fsl_pit_hal2</GenCompName>
       <GenComponentVersion>1.2.0</GenComponentVersion>
       <GenDriverVersion>01.00</GenDriverVersion>
       <GenEventModule />
@@ -2415,8 +2375,8 @@
       <GenExtraFilesCount>2</GenExtraFilesCount>
       <ExtraFile0>SDK\platform\hal\inc\fsl_pit_hal.h</ExtraFile0>
       <ExtraFile1>SDK\platform\hal\src\pit\fsl_pit_hal.c</ExtraFile1>
-    </InhrCompID_41>
-  </ComponentID_40>
+    </InhrCompID_43>
+  </ComponentID_42>
   <UsedSrcFiles>
     <SrcFile0>Drivers\PEx_Kinetis.src=1186555662</SrcFile0>
     <SrcFile1>Drivers\Common\fsl_debug_consoleAbstract.inc=-1</SrcFile1>

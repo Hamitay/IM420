@@ -7,7 +7,7 @@
 **     Version     : Component 1.2.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-06, 16:42, # CodeGen: 26
+**     Date/Time   : 2017-06-08, 15:49, # CodeGen: 54
 **     Abstract    :
 **         OS_Task component.
 **     Contents    :
@@ -70,7 +70,7 @@
 /* Task1 task stack size */  
 #define TASK1_TASK_STACK_SIZE          1024U
 /* Task1 task priority value */  
-#define TASK1_TASK_PRIORITY            16U
+#define TASK1_TASK_PRIORITY            8U
 /*
 ** ===================================================================
 **     Method      :  Init (component OS_Task)

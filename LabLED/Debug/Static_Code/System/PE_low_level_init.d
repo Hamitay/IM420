@@ -58,9 +58,8 @@ Static_Code/System/PE_low_level_init.o: \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task3.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task4.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h \
- C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h \
- C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Shell.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/board.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pin_init.h
 
@@ -180,11 +179,9 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task4.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h:
 
-C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h:
-
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h:
 
-C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h:
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Shell.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/board.h:
 

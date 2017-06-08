@@ -56,9 +56,8 @@ Generated_Code/Cpu.o: ../Generated_Code/Cpu.c ../Generated_Code/Cpu.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task3.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task4.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h \
- C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h \
- C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h \
+ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Shell.h \
  C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Sources/os_tasks.h
 
 ../Generated_Code/Cpu.h:
@@ -179,10 +178,8 @@ C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task4.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Task5.h:
 
-C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/TaskMaster.h:
-
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/DbgCs1.h:
 
-C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/pitTimer1.h:
+C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Generated_Code/Shell.h:
 
 C:/Users/aluno/Desktop/hamitayWKSPACE/wkspace/LabLED/Sources/os_tasks.h:

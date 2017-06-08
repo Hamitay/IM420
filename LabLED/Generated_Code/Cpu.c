@@ -8,7 +8,7 @@
 **     Repository  : KSDK 1.2.0
 **     Datasheet   : KL25P80M48SF0RM, Rev.3, Sep 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-07, 15:19, # CodeGen: 41
+**     Date/Time   : 2017-06-08, 15:49, # CodeGen: 54
 **     Abstract    :
 **
 **     Settings    :
@@ -127,21 +127,18 @@ void Components_Init(void)
   /*! Task5 Auto initialization start */ 
   (void)Task5_Init();
   /*! Task5 Auto initialization end */                       
-  /*! TaskMaster Auto initialization start */ 
-  (void)TaskMaster_Init();
-  /*! TaskMaster Auto initialization end */                       
   /*! DbgCs1 Auto initialization start */
   /* Enable clock source for LPSCI - bitfield UART0 within SIM_SOPT2 */
   CLOCK_SYS_SetLpsciSrc(BOARD_DEBUG_UART_INSTANCE,kClockLpsciSrcPllFllSel);
   /* Debug console initialization */
   DbgConsole_Init(BOARD_DEBUG_UART_INSTANCE, DEBUG_UART_BAUD, DEBUG_UART_TYPE);
   /*! DbgCs1 Auto initialization end */
-  /*! pitTimer1 Auto initialization start */
-  OSA_InstallIntHandler(PIT_IRQn,  pitTimer1_IRQHandler);
-  PIT_DRV_Init(FSL_PITTIMER1,true);
-  PIT_DRV_InitChannel(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL,&pitTimer1_InitConfig0);
-  PIT_DRV_StartTimer(FSL_PITTIMER1,FSL_PITTIMER1_CHANNEL);
-  /*! pitTimer1 Auto initialization end */
+  /*! Shell Auto initialization start */
+  NVIC_SetPriority(PIT_IRQn, 0U);
+  PIT_DRV_Init(FSL_SHELL,true);
+  PIT_DRV_InitChannel(FSL_SHELL,FSL_SHELL_CHANNEL,&Shell_InitConfig0);
+  PIT_DRV_StartTimer(FSL_SHELL,FSL_SHELL_CHANNEL);
+  /*! Shell Auto initialization end */
 }
 #endif /* CPU_COMPONENTS_INIT */
 

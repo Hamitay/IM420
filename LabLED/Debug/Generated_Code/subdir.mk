@@ -6,53 +6,50 @@
 C_SRCS += \
 ../Generated_Code/Cpu.c \
 ../Generated_Code/DbgCs1.c \
+../Generated_Code/Shell.c \
 ../Generated_Code/Task1.c \
 ../Generated_Code/Task2.c \
 ../Generated_Code/Task3.c \
 ../Generated_Code/Task4.c \
 ../Generated_Code/Task5.c \
-../Generated_Code/TaskMaster.c \
 ../Generated_Code/clockMan1.c \
 ../Generated_Code/free_rtos.c \
 ../Generated_Code/gpio1.c \
 ../Generated_Code/hardware_init.c \
 ../Generated_Code/osa1.c \
-../Generated_Code/pin_init.c \
-../Generated_Code/pitTimer1.c 
+../Generated_Code/pin_init.c 
 
 OBJS += \
 ./Generated_Code/Cpu.o \
 ./Generated_Code/DbgCs1.o \
+./Generated_Code/Shell.o \
 ./Generated_Code/Task1.o \
 ./Generated_Code/Task2.o \
 ./Generated_Code/Task3.o \
 ./Generated_Code/Task4.o \
 ./Generated_Code/Task5.o \
-./Generated_Code/TaskMaster.o \
 ./Generated_Code/clockMan1.o \
 ./Generated_Code/free_rtos.o \
 ./Generated_Code/gpio1.o \
 ./Generated_Code/hardware_init.o \
 ./Generated_Code/osa1.o \
-./Generated_Code/pin_init.o \
-./Generated_Code/pitTimer1.o 
+./Generated_Code/pin_init.o 
 
 C_DEPS += \
 ./Generated_Code/Cpu.d \
 ./Generated_Code/DbgCs1.d \
+./Generated_Code/Shell.d \
 ./Generated_Code/Task1.d \
 ./Generated_Code/Task2.d \
 ./Generated_Code/Task3.d \
 ./Generated_Code/Task4.d \
 ./Generated_Code/Task5.d \
-./Generated_Code/TaskMaster.d \
 ./Generated_Code/clockMan1.d \
 ./Generated_Code/free_rtos.d \
 ./Generated_Code/gpio1.d \
 ./Generated_Code/hardware_init.d \
 ./Generated_Code/osa1.d \
-./Generated_Code/pin_init.d \
-./Generated_Code/pitTimer1.d 
+./Generated_Code/pin_init.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -6,7 +6,7 @@
 **     Version     : Component 1.0.0, Driver 01.00, CPU db: 3.00.000
 **     Repository  : KSDK 1.2.0
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2017-06-07, 18:25, # CodeGen: 45
+**     Date/Time   : 2017-06-08, 15:59, # CodeGen: 55
 **
 **     Copyright : 1997 - 2015 Freescale Semiconductor, Inc. 
 **     All Rights Reserved.
@@ -56,7 +56,10 @@
 #define configGENERATE_STATIC_SOURCES            1 /* 1: it will create 'static' sources to be used without Processor Expert; 0: Processor Expert code generated */
 #define configPEX_KINETIS_SDK                    1 /* 1: project is a Kinetis SDK Processor Expert project; 0: No Kinetis Processor Expert project */
 
-#define configGENERATE_RUN_TIME_STATS            0 /* 1: generate runtime statistics; 0: no runtime statistics */
+#define configGENERATE_RUN_TIME_STATS_USE_TICKS   1 /* 1: Use the RTOS tick counter as runtime counter. 0: use extra timer */
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()  /* nothing */ /* default: use Tick counter as runtime counter */
+#define portGET_RUN_TIME_COUNTER_VALUE()          xTaskGetTickCount() /* default: use Tick counter as runtime counter */
+#define configGENERATE_RUN_TIME_STATS             1 /* 1: generate runtime statistics; 0: no runtime statistics */
 
 #define configUSE_PREEMPTION                     1 /* 1: pre-emptive mode; 0: cooperative mode */
 #define configUSE_IDLE_HOOK                      0 /* 1: use Idle hook; 0: no Idle hook */

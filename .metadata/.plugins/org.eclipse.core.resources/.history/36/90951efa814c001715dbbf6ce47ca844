@@ -1,0 +1,158 @@
+/* ###################################################################
+**     Filename    : Events.c
+**     Project     : LabLED
+**     Processor   : MKL25Z128VLK4
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2017-04-19, 14:56, # CodeGen: 0
+**     Abstract    :
+**         This is user's event module.
+**         Put your event handler code here.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file Events.c
+** @version 01.00
+** @brief
+**         This is user's event module.
+**         Put your event handler code here.
+*/         
+/*!
+**  @addtogroup Events_module Events module documentation
+**  @{
+*/         
+/* MODULE Events */
+
+#include "Cpu.h"
+#include "Events.h"
+#include "os_tasks.h"
+#include "customComponents/led_hal.h"
+#include "osa1.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif 
+
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+//Global variables
+int iCounter = 0;
+
+void UART0_IRQHandler(void)
+{
+	  //Get command
+	  char cInput = debug_getchar();
+	  int iNumberOfTasks = uxTaskGetNumberOfTasks();
+	  TaskStatus_t stats[iNumberOfTasks];
+
+	  switch(cInput) {
+
+	  case 'p':
+		  debug_printf("Pausing tasks...\n\r");
+		  vTaskSuspendAll();
+		  break;
+	  case 's':
+		  debug_printf("Task status:\n\r");
+		  //Get tasks state
+		  uxTaskGetSystemState(stats,iNumberOfTasks,NULL);
+
+		  for(int i = 0; i < iNumberOfTasks; i ++) {
+			  TaskStatus_t status = stats[i];
+
+			  UBaseType_t id = status.xTaskNumber; 						//ID
+
+			  UBaseType_t currentPriority = status.uxCurrentPriority;	//Priority
+
+			  UBaseType_t basePriority = status.uxBasePriority;			//Priority
+
+			  eTaskState state = status.eCurrentState;					//Status
+			  char *cState;
+			  switch(state) {
+			  case eRunning:
+				  cState = "Running";
+				  break;
+			  case eReady:
+				  cState = "Ready";
+				  break;
+			  case eBlocked:
+				  cState = "Blocked";
+				  break;
+			  case eSuspended:
+				  cState = "Suspended";
+				  break;
+			  case eDeleted:
+				  cState = "Deleted";
+				  break;
+			  }
+
+			  uint32_t time = status.ulRunTimeCounter;
+			  debug_printf("Name: %s",status.pcTaskName);
+			  debug_printf("\t ID: %d",id);
+			  debug_printf("\t Current priority: %d",currentPriority);
+			  debug_printf("\t Base priority: %d",basePriority);
+			  debug_printf("\t State: %s",cState);
+			  debug_printf("\t Run time: %d",time);
+			  debug_printf("\n\r");
+		  }
+		  break;
+	  case 'r':
+		  debug_printf("Resuming tasks...\n\r");
+		  xTaskResumeAll();
+		  break;
+	  default:
+		  debug_printf("ERROR: Unknown command \n\r");
+		  break;
+	  }
+	  debug_printf("SCHE_IM420:");
+}
+
+
+void PIT_IRQHandler(void)
+{
+
+//Handles T1
+if((iCounter*20)%20 == 0){
+	OSA_SemaPost(&sem1);
+}
+//Handles T2
+if((iCounter*20)%40 == 0){
+	OSA_SemaPost(&sem2);
+}
+//Handles T3
+if((iCounter*20)%100 == 0){
+	OSA_SemaPost(&sem3);
+}
+//Handles T4
+if((iCounter*20)%500 == 0){
+	OSA_SemaPost(&sem4);
+}
+//Handles T5
+if((iCounter*20)%1000 == 0){
+	OSA_SemaPost(&sem5);
+}
+iCounter++;
+if(iCounter > 1000)
+	iCounter = 0;
+}
+
+/* END Events */
+
+#ifdef __cplusplus
+}  /* extern "C" */
+#endif 
+
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/

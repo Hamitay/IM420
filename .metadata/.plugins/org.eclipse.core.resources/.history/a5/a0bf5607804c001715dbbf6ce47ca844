@@ -1,0 +1,250 @@
+/* ###################################################################
+**     Filename    : os_tasks.c
+**     Project     : LabLED
+**     Processor   : MKL25Z128VLK4
+**     Component   : Events
+**     Version     : Driver 01.00
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2017-06-06, 16:42, # CodeGen: 27
+**     Abstract    :
+**         This is user's event module.
+**         Put your event handler code here.
+**     Settings    :
+**     Contents    :
+**         Task5_task - void Task5_task(os_task_param_t task_init_data);
+**         Task4_task - void Task4_task(os_task_param_t task_init_data);
+**         Task3_task - void Task3_task(os_task_param_t task_init_data);
+**         Task2_task - void Task2_task(os_task_param_t task_init_data);
+**         Task1_task - void Task1_task(os_task_param_t task_init_data);
+**
+** ###################################################################*/
+/*!
+** @file os_tasks.c
+** @version 01.00
+** @brief
+**         This is user's event module.
+**         Put your event handler code here.
+*/         
+/*!
+**  @addtogroup os_tasks_module os_tasks module documentation
+**  @{
+*/         
+/* MODULE os_tasks */
+
+#include "Cpu.h"
+#include "Events.h"
+#include "os_tasks.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif 
+
+
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+/*
+** ===================================================================
+**     Event       :  Task5_task (module os_tasks)
+**
+**     Component   :  Task5 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task5_task(os_task_param_t task_init_data)
+{
+	int iState = 0;
+
+#ifdef PEX_USE_RTOS
+  while (1) {
+#endif
+
+	  switch(iState) {
+	  case 0:
+		  OSA_SemaWait(&sem5, OSA_WAIT_FOREVER);
+		  iState = 1;
+	  break;
+	  case 1:
+		  debug_printf("Task5\n");
+		  iState = 0;
+	  break;
+	  }
+#ifdef PEX_USE_RTOS   
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task4_task (module os_tasks)
+**
+**     Component   :  Task4 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task4_task(os_task_param_t task_init_data)
+{
+	int iState = 0;
+
+	#ifdef PEX_USE_RTOS
+	  while (1) {
+	#endif
+
+		  switch(iState) {
+		  case 0:
+			  OSA_SemaWait(&sem4, OSA_WAIT_FOREVER);
+			  iState = 1;
+		  break;
+		  case 1:
+			  debug_printf("Task4\n");
+			  iState = 0;
+		  break;
+		  }
+	#ifdef PEX_USE_RTOS
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task3_task (module os_tasks)
+**
+**     Component   :  Task3 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task3_task(os_task_param_t task_init_data)
+{
+	int iState = 0;
+
+		#ifdef PEX_USE_RTOS
+		  while (1) {
+		#endif
+
+			  switch(iState) {
+			  case 0:
+				  OSA_SemaWait(&sem3, OSA_WAIT_FOREVER);
+			      iState = 1;
+			  break;
+			  case 1:
+				  debug_printf("Task3\n");
+				  iState = 0;
+			  break;
+			  }
+		#ifdef PEX_USE_RTOS
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task2_task (module os_tasks)
+**
+**     Component   :  Task2 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task2_task(os_task_param_t task_init_data)
+{
+  /* Write your local variable definition here */
+  
+	int iState = 0;
+	#ifdef PEX_USE_RTOS
+	  while (1) {
+	#endif
+		  switch(iState) {
+		  case 0:
+			  OSA_SemaWait(&sem2, OSA_WAIT_FOREVER);
+			  iState = 1;
+		  break;
+		  case 1:
+			  debug_printf("Task2\n");
+			  iState = 0;
+		  break;
+		  }
+	#ifdef PEX_USE_RTOS
+  }
+#endif    
+}
+
+/*
+** ===================================================================
+**     Event       :  Task1_task (module os_tasks)
+**
+**     Component   :  Task1 [OS_Task]
+*/
+/*!
+**     @brief
+**         RTOS task routine. The routine is generated into os_tasks.c
+**         file.
+**     @param
+**         task_init_data  - Parameter to be passed to the
+**         task when it is created.
+*/
+/* ===================================================================*/
+void Task1_task(os_task_param_t task_init_data)
+{
+	int iState = 0;
+	#ifdef PEX_USE_RTOS
+	  while (1) {
+	#endif
+		  switch(iState) {
+		  case 0:
+			  debug_printf("Task1\n");
+			  if(OSA_SemaWait(&sem1, 0) == kStatus_OSA_Success)
+					  iState = 1;
+		  break;
+		  case 1:
+			  debug_printf("Task1\n");
+			  iState = 0;
+		  break;
+		  }
+	#ifdef PEX_USE_RTOS
+  }
+#endif    
+}
+
+/* END os_tasks */
+
+#ifdef __cplusplus
+}  /* extern "C" */
+#endif 
+
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.5 [05.21]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/

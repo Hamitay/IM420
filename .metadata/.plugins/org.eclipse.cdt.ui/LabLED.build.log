@@ -1,11 +1,11 @@
-18:40:39 **** Incremental Build of configuration Debug for project LabLED ****
+16:53:34 **** Incremental Build of configuration Debug for project LabLED ****
 make all 
 'Invoking: Cross ARM GNU Print Size'
 arm-none-eabi-size --format=berkeley "LabLED.elf"
    text	   data	    bss	    dec	    hex	filename
-  29844	    128	   3184	  33156	   8184	LabLED.elf
+  30888	    128	   3200	  34216	   85a8	LabLED.elf
 'Finished building: LabLED.siz'
 ' '
 
-18:40:39 Build Finished (took 531ms)
+16:53:35 Build Finished (took 792ms)
 

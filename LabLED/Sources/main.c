@@ -41,9 +41,8 @@
 #include "Task3.h"
 #include "Task4.h"
 #include "Task5.h"
-#include "TaskMaster.h"
 #include "DbgCs1.h"
-#include "pitTimer1.h"
+#include "Shell.h"
 #include "customComponents/led_hal.h"
 #include "MKL25Z4.h"
 #include "core_cm0plus.h"
@@ -65,12 +64,18 @@ int main(void)
   /*** End of Processor Expert internal initialization.                    ***/
 
   /* Write your code here */
+  NVIC_EnableIRQ(UART0_IRQn);
+  UART_HAL_SetIntMode(UART0_BASE_PTR,kLpsciIntRxDataRegFull,true);
+
   //Enable semaphores
-  OSA_SemaCreate(&sem1,0);
-  OSA_SemaCreate(&sem2,0);
-  OSA_SemaCreate(&sem3,0);
-  OSA_SemaCreate(&sem4,0);
-  OSA_SemaCreate(&sem5,0);
+  OSA_SemaCreate(&sem1,1);
+  OSA_SemaCreate(&sem2,1);
+  OSA_SemaCreate(&sem3,1);
+  OSA_SemaCreate(&sem4,1);
+  OSA_SemaCreate(&sem5,1);
+
+  //First shell init
+  debug_printf("\n\n\nSCHE_IM420:");
   /* For example: for(;;) { } */
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
